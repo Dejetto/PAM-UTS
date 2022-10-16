@@ -44,6 +44,7 @@ function TampilanProfil() {
       <View style={{ marginLeft: 20, flexDirection: 'row' }}>
         <Text>Profil</Text>
       </View>
+      <Image style={{ width: 300, height: 300 }} source={{ uri:'https://logodix.com/logo/1984436.jpg' }} />
     </view>
   );
 }
@@ -54,6 +55,8 @@ function TampilanPembuka() {
       <View style={{ marginLeft: 20, flexDirection: 'row' }}>
         <Text>tampilan awal layar</Text>
       </View>
+      <Image style={{ width: 300, height: 300 }} 
+      source={{ uri:'https://3.bp.blogspot.com/-drycuZLysTI/W3ThArYn9hI/AAAAAAAAJJY/-jebyiG_XLs34o4rtPEJCAp7oI8gaw4ygCLcBGAs/s1600/4.png' }} />
     </view>
   );
 }
@@ -64,6 +67,7 @@ function TampilanSetelan() {
       <View style={{ marginLeft: 20, flexDirection: 'row' }}>
         <Text>Setelan</Text>
       </View>
+      <Image style={{ width: 300, height: 300 }} source={{ uri:'https://logodix.com/logo/1234772.png' }} />
     </view>
   );
 }
