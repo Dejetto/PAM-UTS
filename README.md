@@ -2,7 +2,8 @@
 
 Tereak-Expo merupakan template react-native yang memakai expo berbasis react-native yang dibantu dengan expo.
 
-Daftar package expo yang dipakai dalam aplikasi ini ialah :
+Daftar package expo yang dipakai dalam aplikasi ini ialah
+
 "expo": "~46.0.16",
 "expo-status-bar": "^1.4.0",
 "expo-updates": "~0.14.6",
