@@ -54,10 +54,18 @@ function TampilanPembuka() {
     <View>
       <View style={{ marginLeft: 20,marginRight:20, flexDirection: 'row' }}>
         <Text>jika tidak bisa memakai npx maka pakailah yarn.</Text>
+        
+      </View>
+      <View style={{ marginLeft: 20,marginRight:20, flexDirection: 'row' }}>
         <Text>tukar keyword "npm install" menjadi "yarn add" jikalau anda tidak bisa memakai npx.</Text>
-        <Text style={{color: 'blue'}}
+      </View>
+      <View style={{ marginLeft: 20,marginRight:20, flexDirection: 'row' }}>
+        <Text>Tekan tulisan berwarna biru untuk melihat berbagai macam contoh dari React-Native Program</Text>
+      </View>
+      <View>
+        <Text style={{ marginLeft: 20,marginRight:20, flexDirection: 'row', color: 'blue' }}
           onPress={() => Linking.openURL('https://github.com/robinhuy/react-native-expo-examples')}>
-           Sample of React Native
+            Sample of React Native
         </Text>
       </View>
       <Image style={{ width: 100, height: 100 }} 
