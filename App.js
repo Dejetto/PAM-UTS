@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View, Image, TouchableOpacity, Linking } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
@@ -11,7 +11,7 @@ export default function App() {
     <NavigationContainer>
       <Tab.Navigator
         screenOptions={({ route }) => ({
-          tabBarIcon: ({ focused, color, size }) => {
+          TabBarIcon: ({ focused, color, size }) => {
             let iconName;
             if (route.name === "Pembuka") {
               iconName = "home";
@@ -24,7 +24,7 @@ export default function App() {
             return <FontAwesome name={iconName} size={size} color={color} />;
           },
         })}
-        tabBarOptions={{
+        TabBarOptions={{
           activeTintColor: "tomato",
           inactiveTintColor: "gray",
           labelPosition: "below-icon",
@@ -40,35 +40,40 @@ export default function App() {
 
 function TampilanProfil() {
   return (
-    <view>
+    <View>
       <View style={{ marginLeft: 20, flexDirection: 'row' }}>
         <Text>Profil</Text>
       </View>
-      <Image style={{ width: 300, height: 300 }} source={{ uri:'https://logodix.com/logo/1984436.jpg' }} />
-    </view>
+      <Image style={{ width: 100, height: 100 }} source={{ uri:'https://logodix.com/logo/1984436.jpg' }} />
+    </View>
   );
 }
 
 function TampilanPembuka() {
   return (
-    <view>
-      <View style={{ marginLeft: 20, flexDirection: 'row' }}>
-        <Text>tampilan awal layar</Text>
+    <View>
+      <View style={{ marginLeft: 20,marginRight:20, flexDirection: 'row' }}>
+        <Text>jika tidak bisa memakai npx maka pakailah yarn.</Text>
+        <Text>tukar keyword "npm install" menjadi "yarn add" jikalau anda tidak bisa memakai npx.</Text>
+        <Text style={{color: 'blue'}}
+          onPress={() => Linking.openURL('https://github.com/robinhuy/react-native-expo-examples')}>
+           Sample of React Native
+        </Text>
       </View>
-      <Image style={{ width: 300, height: 300 }} 
+      <Image style={{ width: 100, height: 100 }} 
       source={{ uri:'https://3.bp.blogspot.com/-drycuZLysTI/W3ThArYn9hI/AAAAAAAAJJY/-jebyiG_XLs34o4rtPEJCAp7oI8gaw4ygCLcBGAs/s1600/4.png' }} />
-    </view>
+    </View>
   );
 }
 
 function TampilanSetelan() {
   return (
-    <view>
+    <View>
       <View style={{ marginLeft: 20, flexDirection: 'row' }}>
         <Text>Setelan</Text>
       </View>
-      <Image style={{ width: 300, height: 300 }} source={{ uri:'https://logodix.com/logo/1234772.png' }} />
-    </view>
+      <Image style={{ width: 100, height: 100 }} source={{ uri:'https://logodix.com/logo/1234772.png' }} />
+    </View>
   );
 }
 
