@@ -1,4 +1,4 @@
-# Tereak-Expo 🛍
+# Tereak-Expo
 
 Tereak-Expo merupakan template react-native yang memakai expo berbasis react-native yang dibantu dengan expo.
 
