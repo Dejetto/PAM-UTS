@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
@@ -40,25 +40,31 @@ export default function App() {
 
 function TampilanProfil() {
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Profil</Text>
-    </View>
+    <view>
+      <View style={{ marginLeft: 20, flexDirection: 'row' }}>
+        <Text>Profil</Text>
+      </View>
+    </view>
   );
 }
 
 function TampilanPembuka() {
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>tampilan awal layar</Text>
-    </View>
+    <view>
+      <View style={{ marginLeft: 20, flexDirection: 'row' }}>
+        <Text>tampilan awal layar</Text>
+      </View>
+    </view>
   );
 }
 
 function TampilanSetelan() {
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Setelan</Text>
-    </View>
+    <view>
+      <View style={{ marginLeft: 20, flexDirection: 'row' }}>
+        <Text>Setelan</Text>
+      </View>
+    </view>
   );
 }
 
